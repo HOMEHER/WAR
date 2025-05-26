@@ -3,69 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>戰爭的真相 - 和平的呼喚</title>
+    <title data-i18n="title">戰爭的真相 - 和平的呼喚</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body>    <div class="language-switcher">
+        <button class="lang-btn" data-lang="zh-TW">中文</button>
+        <button class="lang-btn" data-lang="en">English</button>
+        <button class="lang-btn" data-lang="ja">日本語</button>
+    </div>
+
     <header>
-        <h1>戰爭的真相</h1>
-        <p class="subtitle">讓我們永遠記住歷史的教訓</p>
+        <h1 data-i18n="mainTitle">戰爭的真相</h1>
+        <p class="subtitle" data-i18n="subtitle">讓我們永遠記住歷史的教訓</p>
     </header>
 
     <main>
         <section id="intro" data-aos="fade-up">
-            <h2>前言</h2>
-            <p>戰爭不僅帶來生命的消逝，更造成無數家庭的破碎。這個網站旨在展示戰爭的殘酷，以警惕人類避免重蹈覆轍。</p>
+            <h2 data-i18n="introTitle">前言</h2>
+            <p data-i18n="introText">戰爭不僅帶來生命的消逝，更造成無數家庭的破碎。這個網站旨在展示戰爭的殘酷，以警惕人類避免重蹈覆轍。</p>
         </section>
 
         <section id="gallery" class="image-gallery">
             <div class="gallery-item" data-aos="fade-right">
-                <a href="廢棄的建築.jfif" data-fancybox="gallery" data-caption="被遺棄的城市">
+                <a href="廢棄的建築.jfif" data-fancybox="gallery" data-caption-i18n="abandonedCity">
                     <img src="廢棄的建築.jfif" alt="廢棄的建築">
                 </a>
-                <p class="caption">被遺棄的城市</p>
+                <p class="caption" data-i18n="abandonedCity">被遺棄的城市</p>
             </div>
 
             <div class="gallery-item" data-aos="fade-left">
-                <a href="流離失所的人民.jfif" data-fancybox="gallery" data-caption="流離失所的人們">
+                <a href="流離失所的人民.jfif" data-fancybox="gallery" data-caption-i18n="refugees">
                     <img src="流離失所的人民.jfif" alt="流離失所的人們">
                 </a>
-                <p class="caption">流離失所的人們</p>
+                <p class="caption" data-i18n="refugees">流離失所的人們</p>
             </div>
         </section>
 
         <section id="facts" data-aos="fade-up">
-            <h2>戰爭數據</h2>
+            <h2 data-i18n="statsTitle">戰爭數據</h2>
             <div class="fact-container">
                 <div class="fact" data-counter="20000000">
                     <span class="number">0</span>
-                    <p>第二次世界大戰死亡人數</p>
+                    <p data-i18n="ww2Deaths">第二次世界大戰死亡人數</p>
                 </div>
                 <div class="fact" data-counter="80000000">
                     <span class="number">0</span>
-                    <p>受影響的平民人數</p>
+                    <p data-i18n="affectedCivilians">受影響的平民人數</p>
                 </div>
                 <div class="fact" data-counter="50000000">
                     <span class="number">0</span>
-                    <p>流離失所者</p>
+                    <p data-i18n="displaced">流離失所者</p>
                 </div>
             </div>
         </section>
 
         <section id="message" data-aos="fade-up">
-            <h2>和平的呼喚</h2>
-            <p>讓我們共同努力，維護世界和平，讓戰爭永遠只存在於歷史課本中。</p>
+            <h2 data-i18n="peaceTitle">和平的呼喚</h2>
+            <p data-i18n="peaceMessage">讓我們共同努力，維護世界和平，讓戰爭永遠只存在於歷史課本中。</p>
         </section>
     </main>
 
     <footer>
-        <p>© 2025 戰爭的真相 - 和平的呼喚</p>
+        <p data-i18n="copyright">© 2025 戰爭的真相 - 和平的呼喚</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

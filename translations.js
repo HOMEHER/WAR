@@ -1,0 +1,50 @@
+const translations = {
+    'zh-TW': {
+        'title': '戰爭的真相 - 和平的呼喚',
+        'mainTitle': '戰爭的真相',
+        'subtitle': '讓我們永遠記住歷史的教訓',
+        'introTitle': '前言',
+        'introText': '戰爭不僅帶來生命的消逝，更造成無數家庭的破碎。這個網站旨在展示戰爭的殘酷，以警惕人類避免重蹈覆轍。',
+        'abandonedCity': '被遺棄的城市',
+        'refugees': '流離失所的人們',
+        'statsTitle': '戰爭數據',
+        'ww2Deaths': '第二次世界大戰死亡人數',
+        'affectedCivilians': '受影響的平民人數',
+        'displaced': '流離失所者',
+        'peaceTitle': '和平的呼喚',
+        'peaceMessage': '讓我們共同努力，維護世界和平，讓戰爭永遠只存在於歷史課本中。',
+        'copyright': '© 2025 戰爭的真相 - 和平的呼喚'
+    },
+    'en': {
+        'title': 'The Truth of War - A Call for Peace',
+        'mainTitle': 'The Truth of War',
+        'subtitle': 'Let Us Never Forget the Lessons of History',
+        'introTitle': 'Introduction',
+        'introText': 'War not only brings the loss of life but also causes countless families to be torn apart. This website aims to show the cruelty of war to prevent humanity from repeating these tragedies.',
+        'abandonedCity': 'Abandoned City',
+        'refugees': 'Displaced People',
+        'statsTitle': 'War Statistics',
+        'ww2Deaths': 'World War II Deaths',
+        'affectedCivilians': 'Affected Civilians',
+        'displaced': 'Displaced Persons',
+        'peaceTitle': 'A Call for Peace',
+        'peaceMessage': 'Let us work together to maintain world peace and ensure that war exists only in history books.',
+        'copyright': '© 2025 The Truth of War - A Call for Peace'
+    },
+    'ja': {
+        'title': '戦争の真実 - 平和への願い',
+        'mainTitle': '戦争の真実',
+        'subtitle': '歴史の教訓を決して忘れないために',
+        'introTitle': 'はじめに',
+        'introText': '戦争は命を奪うだけでなく、無数の家族を引き裂きます。このウェブサイトは、人類が同じ過ちを繰り返さないように、戦争の残酷さを示すことを目的としています。',
+        'abandonedCity': '廃墟となった都市',
+        'refugees': '避難を強いられた人々',
+        'statsTitle': '戦争の統計',
+        'ww2Deaths': '第二次世界大戦での死者数',
+        'affectedCivilians': '影響を受けた民間人数',
+        'displaced': '避難民数',
+        'peaceTitle': '平和への願い',
+        'peaceMessage': '共に力を合わせ、世界の平和を守り、戦争が歴史の教科書にのみ存在するようにしましょう。',
+        'copyright': '© 2025 戦争の真実 - 平和への願い'
+    }
+};

@@ -9,6 +9,42 @@ Fancybox.bind("[data-fancybox]", {
     // 自訂選項
 });
 
+// 語言切換功能
+let currentLang = localStorage.getItem('language') || 'zh-TW';
+
+function updateLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem('language', lang);
+    document.documentElement.lang = lang;
+    document.title = translations[lang]['title'];
+    
+    // 更新所有翻譯文字
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang][key]) {
+            element.textContent = translations[lang][key];
+        }
+    });
+
+    // 更新 Fancybox 圖片說明
+    document.querySelectorAll('[data-caption-i18n]').forEach(element => {
+        const key = element.getAttribute('data-caption-i18n');
+        if (translations[lang][key]) {
+            element.setAttribute('data-caption', translations[lang][key]);
+        }
+    });
+
+    // 更新語言按鈕狀態
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+    });
+}
+
+// 初始化語言
+document.addEventListener('DOMContentLoaded', () => {
+    updateLanguage(currentLang);
+});
+
 // 數字計數動畫
 function animateNumber(element, target) {
     let current = 0;
@@ -46,4 +82,12 @@ const observer = new IntersectionObserver((entries) => {
 // 監聽所有數字元素
 document.querySelectorAll('.fact').forEach(fact => {
     observer.observe(fact);
+});
+
+// 添加語言切換按鈕事件監聽
+document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const lang = btn.getAttribute('data-lang');
+        updateLanguage(lang);
+    });
 });
