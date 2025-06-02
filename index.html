@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="讓我們永遠記住歷史的教訓，共同維護世界和平" data-i18n="meta:description">
     <title data-i18n="title">戰爭的真相 - 和平的呼喚</title>
+    
+    <!-- Open Graph 標籤 -->
+    <meta property="og:title" content="戰爭的真相 - 和平的呼喚" data-i18n="og:title">
+    <meta property="og:description" content="讓我們永遠記住歷史的教訓，共同維護世界和平" data-i18n="og:description">
+    <meta property="og:image" content="廢棄的建築.jfif">
+    <meta property="og:type" content="website">
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <!-- 社群分享圖標 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>    <div class="language-switcher">
+<body>
+    <!-- Loading 動畫 -->
+    <div class="loading-overlay" id="loading">
+        <div class="loading-spinner"></div>
+    </div>
+    
+    <div class="language-switcher">
         <button class="lang-btn" data-lang="zh-TW">中文</button>
         <button class="lang-btn" data-lang="en">English</button>
         <button class="lang-btn" data-lang="ja">日本語</button>
@@ -28,14 +44,20 @@
         <section id="gallery" class="image-gallery">
             <div class="gallery-item" data-aos="fade-right">
                 <a href="廢棄的建築.jfif" data-fancybox="gallery" data-caption-i18n="abandonedCity">
-                    <img src="廢棄的建築.jfif" alt="廢棄的建築">
+                    <img src="廢棄的建築.jfif" 
+                         srcset="廢棄的建築.jfif 1x, 廢棄的建築@2x.jfif 2x" 
+                         alt="廢棄的建築" 
+                         loading="lazy">
                 </a>
                 <p class="caption" data-i18n="abandonedCity">被遺棄的城市</p>
             </div>
 
             <div class="gallery-item" data-aos="fade-left">
                 <a href="流離失所的人民.jfif" data-fancybox="gallery" data-caption-i18n="refugees">
-                    <img src="流離失所的人民.jfif" alt="流離失所的人們">
+                    <img src="流離失所的人民.jfif" 
+                         srcset="流離失所的人民.jfif 1x, 流離失所的人民@2x.jfif 2x" 
+                         alt="流離失所的人們" 
+                         loading="lazy">
                 </a>
                 <p class="caption" data-i18n="refugees">流離失所的人們</p>
             </div>
@@ -59,9 +81,63 @@
             </div>
         </section>
 
+        <section class="timeline-section" data-aos="fade-up">
+            <h2 data-i18n="timelineTitle">二次世界大戰重要時間點</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p data-timeline="t1939">1939年9月1日：納粹德國入侵波蘭，二戰在歐洲爆發</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p data-timeline="t1941June">1941年6月22日：德國入侵蘇聯</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p data-timeline="t1941Dec">1941年12月7日：日本偷襲珍珠港，太平洋戰爭爆發</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p data-timeline="t1942">1942年：史達林格勒戰役，蘇聯在此後開始反攻</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p data-timeline="t1944">1944年6月6日：諾曼第登陸，盟軍開啟第二戰場</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p data-timeline="t1945May">1945年5月7日：德國投降</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p data-timeline="t1945Aug">1945年8月15日：日本宣布投降，二戰結束</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="message" data-aos="fade-up">
             <h2 data-i18n="peaceTitle">和平的呼喚</h2>
             <p data-i18n="peaceMessage">讓我們共同努力，維護世界和平，讓戰爭永遠只存在於歷史課本中。</p>
+            
+            <!-- 社群分享按鈕 -->
+            <div class="share-buttons">
+                <button onclick="shareOnFacebook()" class="share-btn facebook">
+                    <i class="fab fa-facebook"></i>
+                </button>
+                <button onclick="shareOnTwitter()" class="share-btn twitter">
+                    <i class="fab fa-twitter"></i>
+                </button>
+                <button onclick="shareOnLine()" class="share-btn line">
+                    <i class="fab fa-line"></i>
+                </button>
+            </div>
         </section>
     </main>
 

@@ -13,7 +13,18 @@ const translations = {
         'displaced': '流離失所者',
         'peaceTitle': '和平的呼喚',
         'peaceMessage': '讓我們共同努力，維護世界和平，讓戰爭永遠只存在於歷史課本中。',
-        'copyright': '© 2025 戰爭的真相 - 和平的呼喚'
+        'meta:description': '讓我們永遠記住歷史的教訓，共同維護世界和平',
+        'copyright': '© 2025 戰爭的真相 - 和平的呼喚',
+        'timelineTitle': '二次世界大戰重要時間點',
+        'timeline': {
+            't1939': '1939年9月1日：納粹德國入侵波蘭，二戰在歐洲爆發',
+            't1941Dec': '1941年12月7日：日本偷襲珍珠港，太平洋戰爭爆發',
+            't1941June': '1941年6月22日：德國入侵蘇聯',
+            't1942': '1942年：史達林格勒戰役，蘇聯在此後開始反攻',
+            't1944': '1944年6月6日：諾曼第登陸，盟軍開啟第二戰場',
+            't1945May': '1945年5月7日：德國投降',
+            't1945Aug': '1945年8月15日：日本宣布投降，二戰結束'
+        }
     },
     'en': {
         'title': 'The Truth of War - A Call for Peace',
@@ -29,7 +40,18 @@ const translations = {
         'displaced': 'Displaced Persons',
         'peaceTitle': 'A Call for Peace',
         'peaceMessage': 'Let us work together to maintain world peace and ensure that war exists only in history books.',
-        'copyright': '© 2025 The Truth of War - A Call for Peace'
+        'meta:description': 'Let us never forget the lessons of history and work together to maintain world peace',
+        'copyright': '© 2025 The Truth of War - A Call for Peace',
+        'timelineTitle': 'World War II Timeline',
+        'timeline': {
+            't1939': 'Sep 1, 1939: Nazi Germany invades Poland, WWII begins in Europe',
+            't1941Dec': 'Dec 7, 1941: Japan attacks Pearl Harbor, Pacific War begins',
+            't1941June': 'June 22, 1941: Germany invades Soviet Union',
+            't1942': '1942: Battle of Stalingrad, Soviet counteroffensive begins',
+            't1944': 'June 6, 1944: D-Day Normandy landings, Second Front opens',
+            't1945May': 'May 7, 1945: Germany surrenders',
+            't1945Aug': 'Aug 15, 1945: Japan surrenders, WWII ends'
+        }
     },
     'ja': {
         'title': '戦争の真実 - 平和への願い',
@@ -45,6 +67,17 @@ const translations = {
         'displaced': '避難民数',
         'peaceTitle': '平和への願い',
         'peaceMessage': '共に力を合わせ、世界の平和を守り、戦争が歴史の教科書にのみ存在するようにしましょう。',
-        'copyright': '© 2025 戦争の真実 - 平和への願い'
+        'meta:description': '歴史の教訓を忘れず、共に世界の平和を守っていきましょう',
+        'copyright': '© 2025 戦争の真実 - 平和への願い',
+        'timelineTitle': '第二次世界大戦の重要な出来事',
+        'timeline': {
+            't1939': '1939年9月1日：ナチス・ドイツがポーランドに侵攻、欧州で第二次世界大戦勃発',
+            't1941Dec': '1941年12月7日：真珠湾攻撃、太平洋戦争開戦',
+            't1941June': '1941年6月22日：ドイツ、ソ連に侵攻',
+            't1942': '1942年：スターリングラード攻防戦、ソ連軍の反攻開始',
+            't1944': '1944年6月6日：ノルマンディー上陸作戦、連合軍が第二戦線を開く',
+            't1945May': '1945年5月7日：ドイツ降伏',
+            't1945Aug': '1945年8月15日：日本降伏、第二次世界大戦終結'
+        }
     }
 };
